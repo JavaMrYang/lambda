@@ -32,6 +32,14 @@ public class RefactDemo {
       });
     }
 
+    /**
+     * 通过构造函数实例化对象
+     * @throws ClassNotFoundException
+     * @throws NoSuchMethodException
+     * @throws IllegalAccessException
+     * @throws InvocationTargetException
+     * @throws InstantiationException
+     */
     public static void newObject1() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
        Class obj=Class.forName("com.company.Person");
        Constructor constructor=obj.getConstructor(String.class,String.class,String.class,String.class,int.class,int.class);

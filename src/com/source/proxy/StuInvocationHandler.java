@@ -5,6 +5,10 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.Arrays;
 
+/**
+ * 代理实例上处理方法调用并返回结果。这种方法将调用在调用处理程序上调用一个方法时,它与一个代理实例。
+ * @param <T>
+ */
 public class StuInvocationHandler<T> implements InvocationHandler {
     //invocationHandler持有的被代理对象
     T target;
